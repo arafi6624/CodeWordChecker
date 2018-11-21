@@ -16,10 +16,13 @@ public class CodeWordChecker implements StringChecker{
     }
 
     public boolean isValid(String input){
-        if (input.length() >= min || input.length() <= max){
+        if (input.length() >= min && input.length() <= max){
             if(input.indexOf(word) = -1){
                 return true;
             }
+        }
+        else {
+            return false;
         }
     }
 }
